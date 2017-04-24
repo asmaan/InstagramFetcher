@@ -1,0 +1,6 @@
+framework module Pods_InstagramFetcher {
+  umbrella header "Pods-InstagramFetcher-umbrella.h"
+
+  export *
+  module * { export * }
+}
