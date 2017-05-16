@@ -18,8 +18,28 @@
 		682FBB851EAE0E8B00455C7D /* PostsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FBB841EAE0E8B00455C7D /* PostsDataManager.swift */; };
 		682FBB871EAE0EAA00455C7D /* DateTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FBB861EAE0EAA00455C7D /* DateTimeFormatter.swift */; };
 		682FBB891EAE11A900455C7D /* String+TextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682FBB881EAE11A900455C7D /* String+TextHeight.swift */; };
+		683C76721EC03A5200BF08CC /* ServiceClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C76711EC03A5200BF08CC /* ServiceClientTest.swift */; };
+		685E1F4B1EBF397300664CD6 /* DateTimeFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E1F4A1EBF397300664CD6 /* DateTimeFormatterTest.swift */; };
+		685E1F531EBFA69800664CD6 /* InstagramFetcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685E1F521EBFA69800664CD6 /* InstagramFetcherUITests.swift */; };
 		A057F18A19D301C327ED3103 /* Pods_InstagramFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D534E87A620CEE782859A1F2 /* Pods_InstagramFetcher.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		685E1F451EBF394200664CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682FBB5E1EAE0B9F00455C7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682FBB651EAE0B9F00455C7D;
+			remoteInfo = InstagramFetcher;
+		};
+		685E1F551EBFA69800664CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682FBB5E1EAE0B9F00455C7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682FBB651EAE0B9F00455C7D;
+			remoteInfo = InstagramFetcher;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		13DEC8FB0B05C2F8CC683FDF /* Pods-InstagramFetcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFetcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramFetcher/Pods-InstagramFetcher.release.xcconfig"; sourceTree = "<group>"; };
@@ -36,6 +56,13 @@
 		682FBB841EAE0E8B00455C7D /* PostsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostsDataManager.swift; path = HelperClasses/PostsDataManager.swift; sourceTree = "<group>"; };
 		682FBB861EAE0EAA00455C7D /* DateTimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateTimeFormatter.swift; path = HelperClasses/DateTimeFormatter.swift; sourceTree = "<group>"; };
 		682FBB881EAE11A900455C7D /* String+TextHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+TextHeight.swift"; path = "Extensions/String+TextHeight.swift"; sourceTree = "<group>"; };
+		683C76711EC03A5200BF08CC /* ServiceClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClientTest.swift; sourceTree = "<group>"; };
+		685E1F401EBF394200664CD6 /* InstagramFetcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramFetcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		685E1F441EBF394200664CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685E1F4A1EBF397300664CD6 /* DateTimeFormatterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeFormatterTest.swift; sourceTree = "<group>"; };
+		685E1F501EBFA69800664CD6 /* InstagramFetcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramFetcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		685E1F521EBFA69800664CD6 /* InstagramFetcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramFetcherUITests.swift; sourceTree = "<group>"; };
+		685E1F541EBFA69800664CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1F849CC4D78776DD717C252 /* Pods-InstagramFetcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramFetcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramFetcher/Pods-InstagramFetcher.debug.xcconfig"; sourceTree = "<group>"; };
 		D534E87A620CEE782859A1F2 /* Pods_InstagramFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,6 +73,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A057F18A19D301C327ED3103 /* Pods_InstagramFetcher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685E1F3D1EBF394200664CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685E1F4D1EBFA69800664CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				682FBB681EAE0B9F00455C7D /* InstagramFetcher */,
+				685E1F411EBF394200664CD6 /* InstagramFetcherTests */,
+				685E1F511EBFA69800664CD6 /* InstagramFetcherUITests */,
 				682FBB671EAE0B9F00455C7D /* Products */,
 				37B58843945E56B8CA63CCC8 /* Pods */,
 				D6556601F143E59DD6605158 /* Frameworks */,
@@ -75,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				682FBB661EAE0B9F00455C7D /* InstagramFetcher.app */,
+				685E1F401EBF394200664CD6 /* InstagramFetcherTests.xctest */,
+				685E1F501EBFA69800664CD6 /* InstagramFetcherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +159,25 @@
 			name = HelperClasses;
 			sourceTree = "<group>";
 		};
+		685E1F411EBF394200664CD6 /* InstagramFetcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				685E1F441EBF394200664CD6 /* Info.plist */,
+				685E1F4A1EBF397300664CD6 /* DateTimeFormatterTest.swift */,
+				683C76711EC03A5200BF08CC /* ServiceClientTest.swift */,
+			);
+			path = InstagramFetcherTests;
+			sourceTree = "<group>";
+		};
+		685E1F511EBFA69800664CD6 /* InstagramFetcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				685E1F521EBFA69800664CD6 /* InstagramFetcherUITests.swift */,
+				685E1F541EBFA69800664CD6 /* Info.plist */,
+			);
+			path = InstagramFetcherUITests;
+			sourceTree = "<group>";
+		};
 		D6556601F143E59DD6605158 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +209,42 @@
 			productReference = 682FBB661EAE0B9F00455C7D /* InstagramFetcher.app */;
 			productType = "com.apple.product-type.application";
 		};
+		685E1F3F1EBF394200664CD6 /* InstagramFetcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685E1F471EBF394200664CD6 /* Build configuration list for PBXNativeTarget "InstagramFetcherTests" */;
+			buildPhases = (
+				685E1F3C1EBF394200664CD6 /* Sources */,
+				685E1F3D1EBF394200664CD6 /* Frameworks */,
+				685E1F3E1EBF394200664CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				685E1F461EBF394200664CD6 /* PBXTargetDependency */,
+			);
+			name = InstagramFetcherTests;
+			productName = InstagramFetcherTests;
+			productReference = 685E1F401EBF394200664CD6 /* InstagramFetcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		685E1F4F1EBFA69800664CD6 /* InstagramFetcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685E1F571EBFA69800664CD6 /* Build configuration list for PBXNativeTarget "InstagramFetcherUITests" */;
+			buildPhases = (
+				685E1F4C1EBFA69800664CD6 /* Sources */,
+				685E1F4D1EBFA69800664CD6 /* Frameworks */,
+				685E1F4E1EBFA69800664CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				685E1F561EBFA69800664CD6 /* PBXTargetDependency */,
+			);
+			name = InstagramFetcherUITests;
+			productName = InstagramFetcherUITests;
+			productReference = 685E1F501EBFA69800664CD6 /* InstagramFetcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +259,17 @@
 						CreatedOnToolsVersion = 8.3;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+					};
+					685E1F3F1EBF394200664CD6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 682FBB651EAE0B9F00455C7D;
+					};
+					685E1F4F1EBFA69800664CD6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 682FBB651EAE0B9F00455C7D;
 					};
 				};
 			};
@@ -176,6 +287,8 @@
 			projectRoot = "";
 			targets = (
 				682FBB651EAE0B9F00455C7D /* InstagramFetcher */,
+				685E1F3F1EBF394200664CD6 /* InstagramFetcherTests */,
+				685E1F4F1EBFA69800664CD6 /* InstagramFetcherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +301,20 @@
 				682FBB771EAE0BA000455C7D /* LaunchScreen.storyboard in Resources */,
 				682FBB741EAE0B9F00455C7D /* Assets.xcassets in Resources */,
 				682FBB6F1EAE0B9F00455C7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685E1F3E1EBF394200664CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685E1F4E1EBFA69800664CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +384,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		685E1F3C1EBF394200664CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683C76721EC03A5200BF08CC /* ServiceClientTest.swift in Sources */,
+				685E1F4B1EBF397300664CD6 /* DateTimeFormatterTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		685E1F4C1EBFA69800664CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				685E1F531EBFA69800664CD6 /* InstagramFetcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		685E1F461EBF394200664CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682FBB651EAE0B9F00455C7D /* InstagramFetcher */;
+			targetProxy = 685E1F451EBF394200664CD6 /* PBXContainerItemProxy */;
+		};
+		685E1F561EBFA69800664CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682FBB651EAE0B9F00455C7D /* InstagramFetcher */;
+			targetProxy = 685E1F551EBFA69800664CD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		682FBB6D1EAE0B9F00455C7D /* Main.storyboard */ = {
@@ -404,6 +561,59 @@
 			};
 			name = Release;
 		};
+		685E1F481EBF394200664CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = InstagramFetcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.net.InstagramFetcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramFetcher.app/InstagramFetcher";
+			};
+			name = Debug;
+		};
+		685E1F491EBF394200664CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = InstagramFetcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.net.InstagramFetcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstagramFetcher.app/InstagramFetcher";
+			};
+			name = Release;
+		};
+		685E1F581EBFA69800664CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InstagramFetcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.net.InstagramFetcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = InstagramFetcher;
+			};
+			name = Debug;
+		};
+		685E1F591EBFA69800664CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InstagramFetcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aman.net.InstagramFetcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = InstagramFetcher;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,6 +631,24 @@
 			buildConfigurations = (
 				682FBB7C1EAE0BA000455C7D /* Debug */,
 				682FBB7D1EAE0BA000455C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685E1F471EBF394200664CD6 /* Build configuration list for PBXNativeTarget "InstagramFetcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685E1F481EBF394200664CD6 /* Debug */,
+				685E1F491EBF394200664CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685E1F571EBFA69800664CD6 /* Build configuration list for PBXNativeTarget "InstagramFetcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				685E1F581EBFA69800664CD6 /* Debug */,
+				685E1F591EBFA69800664CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

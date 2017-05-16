@@ -26,7 +26,7 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,UIColl
         if (Reachability.init()?.isReachable)!
         {
             //If Network is there fetch data from Server
-            self.getUserPosts()
+            getUserPosts()
         }
         else
         {
@@ -36,6 +36,7 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,UIColl
                 DispatchQueue.main.async {
                     self.collectionViewPosts.reloadData()
                 }
+                
             })
         }
         // Do any additional setup after loading the view, typically from a nib.
@@ -87,11 +88,4 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout,UIColl
         return cell
         
     }
-    //    func collectionView(_ collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-    //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PostCollectionViewCell", for: indexPath as IndexPath) as! PostCollectionViewCell
-    //        // Configure the cell
-    //        cell.configurePostCell(post: self.userInstaPosts[indexPath.row] as! Instapost)
-    //        
-    //        return cell
-    //    }
 }

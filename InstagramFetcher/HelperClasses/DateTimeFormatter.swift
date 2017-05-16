@@ -15,7 +15,7 @@ class DateTimeFormatter: NSObject {
         }
         return Singleton.instance
     }
-    func getDateFromMiliseconds(_ miliseconds:Int32) -> Date {
+    func getDateFromMiliseconds(_ miliseconds:Int64) -> Date {
         let date = Date(timeIntervalSince1970: TimeInterval(miliseconds))
         return (date as NSDate) as Date
     }

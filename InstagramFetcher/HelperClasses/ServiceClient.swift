@@ -39,4 +39,8 @@ class ServiceClient: NSObject {
         }
         task.resume()
     }
+    func testUnitTest(_ completionHandler:(Bool?,Any?) ->Swift.Void)
+    {
+        completionHandler(true,nil);
+    }
 }

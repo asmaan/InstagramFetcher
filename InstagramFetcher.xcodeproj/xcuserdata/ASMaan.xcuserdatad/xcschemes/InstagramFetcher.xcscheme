@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "685E1F3F1EBF394200664CD6"
+               BuildableName = "InstagramFetcherTests.xctest"
+               BlueprintName = "InstagramFetcherTests"
+               ReferencedContainer = "container:InstagramFetcher.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "685E1F4F1EBFA69800664CD6"
+               BuildableName = "InstagramFetcherUITests.xctest"
+               BlueprintName = "InstagramFetcherUITests"
+               ReferencedContainer = "container:InstagramFetcher.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

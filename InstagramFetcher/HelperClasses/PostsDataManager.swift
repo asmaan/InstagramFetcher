@@ -19,6 +19,7 @@ class PostsDataManager: NSObject {
         }
         return Singleton.instance
     }
+    
     func saveUserPostsinCoreData(with postsData: NSDictionary, completionHandler: @escaping (Bool?,NSArray?) -> Swift.Void) {
         if let postsAll = postsData["data"] as? NSArray {
             if postsAll.count>0 {
@@ -56,7 +57,7 @@ class PostsDataManager: NSObject {
                     instaPost.comments = (commentsDict["count"] as? Int16)!
                 }
                 let creationTime = postDictTemp["created_time"] as? String
-                instaPost.createdTime = DateTimeFormatter.sharedInstance.getDateFromMiliseconds(Int32(creationTime!)!) as NSDate
+                instaPost.createdTime = DateTimeFormatter.sharedInstance.getDateFromMiliseconds(Int64(creationTime!)!) as NSDate
                 instaPost.userHasLiked = (postDictTemp["user_has_liked"] as? Bool)!
                 instaPost.postID = postDictTemp["id"] as? String
                 instaPost.tags = postDictTemp["id"] as? NSArray
@@ -107,13 +108,15 @@ class PostsDataManager: NSObject {
         let managedContext = appDelegate.persistentContainer.viewContext
         let deleteFetchUser: NSFetchRequest<User> = User.fetchRequest()
         
-        let deleteRequestUser = NSBatchDeleteRequest(fetchRequest: deleteFetchUser as! NSFetchRequest<NSFetchRequestResult>)
+        let deleteRequestUsers = NSBatchDeleteRequest(fetchRequest: deleteFetchUser as! NSFetchRequest<NSFetchRequestResult>)
         
         do {
-            try managedContext.execute(deleteRequestUser)
+            try managedContext.execute(deleteRequestUsers)
             try managedContext.save()
         } catch {
             print ("There was an error")
         }
     }
+    
+    
 }
